@@ -22,6 +22,7 @@ df['rank'] = np.where(df.loc[:,'medal_type'] == 'GOLD', 1, np.where(df.loc[:,'me
 df = df[['game_name', 'game_location','game_season', 'game_year', 'discipline_title','event_title', 'event_gender', 'athlete_full_name', 'country_name', 'country_3_letter_code', 'medal_type','Gold', 'Silver', 'Bronze', 'Total', 'rank']]
 df = df.drop_duplicates()
 
+st.set_page_config(layout="wide")
 
 st.markdown('# Olympic Summer & Winter Games, 1896-2022')
 
